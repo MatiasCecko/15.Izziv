@@ -1,3 +1,4 @@
+
 15. Izziv intervjuja za programerja: rešite vprašanje o delu s tabelami
 
 Se pripravljate na razgovore s podjetji? Ta izziv je zasnovan tako, da vam pomaga izostriti svoje veščine reševanja problemov z vrsto vprašanj, ki se pogosto postavljajo v intervjujih pri Facebooku, Amazonu, Appleu, Netflixu in Googlu. Potopite se v naš izziv, da povečate svojo samozavest in povečate svojo sposobnost kodiranja.
