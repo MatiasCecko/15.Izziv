@@ -8,7 +8,7 @@ povečate svojo sposobnost kodiranja.
 interpretacije podatkov, shranjenih v nizih, kar je bistvena veščina pri intervjujih s
 programskim inženiringom. Ta izziv vas ne bo le pripravil na tehnične razgovore, ampak tudi
 izboljšal vaše algoritemsko razmišljanje.
--
+ 
 <H2>b) Zahteve:</H2>
         <H3>• Naloga 1: Največja vsota podnizov</H3>
                 • Cilj: Poiščite največjo vsoto sosednje pod-tabele znotraj enodimenzionalne številske
