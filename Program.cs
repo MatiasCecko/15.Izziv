@@ -1,8 +1,12 @@
-﻿using System;
-internal class Program
+using System;
+
+class Program
 {
     static int MaxSubarraySum(int[] a)
     {
+        if (a == null) throw new ArgumentNullException(nameof(a));
+        if (a.Length == 0) throw new ArgumentException("Tabela ne sme biti prazna.", nameof(a));
+
         int best = a[0];
         int current = a[0];
 
@@ -17,9 +21,14 @@ internal class Program
 
     static void RotateRight(int[] a, int k)
     {
+        if (a == null) throw new ArgumentNullException(nameof(a));
         int n = a.Length;
+        if (n == 0) return;          // nič za vrtet
+        if (n == 1) return;          // tudi nič za vrtet
 
-        k = k % n;
+        k = k % n;                   // zmanjšamo k
+        if (k < 0) k += n;           // če je k negativen, ga popravimo
+        if (k == 0) return;          // brez spremembe
 
         Reverse(a, 0, n - 1);
         Reverse(a, 0, k - 1);
@@ -45,12 +54,9 @@ internal class Program
         Console.WriteLine(MaxSubarraySum(a)); // 6
 
         int[] b = { 1, 2, 3, 4, 5 };
-        RotateRight(b, 2);
+        RotateRight(b, 2); // 4 5 1 2 3
 
         for (int i = 0; i < b.Length; i++)
-        {
             Console.Write(b[i] + " ");
-        }
-        // izpis: 4 5 1 2 3
     }
 }
